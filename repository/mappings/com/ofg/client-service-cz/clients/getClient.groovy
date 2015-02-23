@@ -4,6 +4,10 @@ io.coderate.accurest.dsl.GroovyDsl.make {
         method 'GET'
         url $(client(regex('/clients/[0-9]{2}')), server('/clients/1'))
 
+        headers {
+            header 'Content-Type': 'application/hal+json'
+        }
+
     }
     response {
         status 200
