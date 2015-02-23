@@ -8,3 +8,6 @@ stubrunner.stubs:
   repository.root: "http://dl.bintray.com/4finance/micro"
   group: com.ofg
   module: stub-runner-examples
+
+stubrunner.use-microservice-definitions: true
+stubrunner.skip-local-repo: true
