@@ -3,7 +3,7 @@ io.coderate.accurest.dsl.GroovyDsl.make {
         method 'POST'
         url '/clients'
         headers {
-            header 'Content-Type': 'application/hal+json'
+            header 'Content-Type': 'application/json'
         }
         body '''\
 {
