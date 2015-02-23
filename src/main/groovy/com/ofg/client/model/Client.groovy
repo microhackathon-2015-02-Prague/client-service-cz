@@ -6,11 +6,13 @@ import javax.persistence.GenerationType
 import javax.persistence.Id
 
 @Entity
-class Person {
+class Client {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     Long id
 
     String firstName
     String lastName
+    int age
+    String loanId
 }
