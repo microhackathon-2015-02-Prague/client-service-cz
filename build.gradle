@@ -90,6 +90,7 @@ repositories {
 }
 
 dependencies {
+    compile "com.github.fakemongo:fongo:1.6.0"
     compile "org.springframework.boot:spring-boot-starter-data-rest"
     compile "org.springframework.boot:spring-boot-starter-web"
     compile "org.springframework.boot:spring-boot-starter-actuator"
@@ -136,8 +137,6 @@ dependencies {
     testCompile "org.seleniumhq.selenium:selenium-htmlunit-driver:$seleniumVersion"
     testCompile "com.jayway.restassured:rest-assured:$restAssuredVersion"
     testCompile "com.jayway.restassured:spring-mock-mvc:$restAssuredVersion"
-
-    compile "com.github.fakemongo:fongo:1.6.0"
 }
 
 task docker(type: Docker) {
