@@ -93,8 +93,8 @@ dependencies {
     compile "org.springframework.boot:spring-boot-starter-data-rest"
     compile "org.springframework.boot:spring-boot-starter-web"
     compile "org.springframework.boot:spring-boot-starter-actuator"
-//    compile "org.springframework.boot:spring-boot-starter-data-jpa"
-    compile("org.springframework.boot:spring-boot-starter-data-mongodb")
+    compile "org.springframework.boot:spring-boot-starter-data-jpa"
+//    compile("org.springframework.boot:spring-boot-starter-data-mongodb")
     compile "org.springframework:spring-context-support"
     compile "org.codehaus.groovy:groovy-all"
     compile 'com.fasterxml.jackson.core:jackson-databind'
@@ -137,7 +137,7 @@ dependencies {
     testCompile "com.jayway.restassured:rest-assured:$restAssuredVersion"
     testCompile "com.jayway.restassured:spring-mock-mvc:$restAssuredVersion"
 
-    testCompile "com.github.fakemongo:fongo:1.6.0"
+//    testCompile "com.github.fakemongo:fongo:1.6.0"
 }
 
 task docker(type: Docker) {
