@@ -200,7 +200,6 @@ accurest {
     contractsDslDir = contractsDir
     generatedTestSourcesDir = file("${project.rootDir}/src/test/groovy/")
     stubsOutputDir = wiremockStubsOutputDir
-    testMode = 'EXPLICIT'
 }
 
 generateAccurest.dependsOn generateWiremockClientStubs
