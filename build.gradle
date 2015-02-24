@@ -137,7 +137,7 @@ dependencies {
     testCompile "com.jayway.restassured:rest-assured:$restAssuredVersion"
     testCompile "com.jayway.restassured:spring-mock-mvc:$restAssuredVersion"
 
-    testCompile "com.github.fakemongo:fongo:1.6.0"
+    compile "com.github.fakemongo:fongo:1.6.0"
 }
 
 task docker(type: Docker) {
