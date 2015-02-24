@@ -1,0 +1,36 @@
+<alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">
+    <span ng-bind-html="alert.msg"></span>
+</alert>
+
+<div>
+    <h3>Client</h3>
+
+    <h4>Add Client</h4>
+
+    <form role="form">
+        <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="FirstName" ng-model="client.firstName">
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="LastName" ng-model="client.lastName">
+        </div>
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input type="text" class="form-control" id="age" placeholder="Age" ng-model="client.age">
+        </div>
+        <div class="form-group">
+            <label for="loanId">Loan Id</label>
+            <input type="text" class="form-control" id="loanId" placeholder="Loan Id" ng-model="client.loanId">
+        </div>
+
+        <button type="button" class="btn btn-default" ng-click="saveClient()">Save</button>
+    </form>
+
+    <hr/>
+
+    <div class="well">
+        {{result}}
+    </div>
+</div>
