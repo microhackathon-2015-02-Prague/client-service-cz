@@ -13,7 +13,7 @@ buildscript {
         classpath "org.springframework.boot:spring-boot-gradle-plugin:1.2.1.RELEASE"
         classpath 'com.ofg:uptodate-gradle-plugin:1.1.0'
         classpath 'se.transmode.gradle:gradle-docker:1.2'
-        classpath 'io.codearte.accurest:accurest-gradle-plugin:0.4.1'
+        classpath 'io.codearte.accurest:accurest-gradle-plugin:0.4.2'
         classpath 'joda-time:joda-time:2.4'
 
         if (project.hasProperty("coverage")) {
@@ -200,6 +200,7 @@ accurest {
     contractsDslDir = contractsDir
     generatedTestSourcesDir = file("${project.rootDir}/src/test/groovy/")
     stubsOutputDir = wiremockStubsOutputDir
+    testMode = 'EXPLICIT'
 }
 
 generateAccurest.dependsOn generateWiremockClientStubs

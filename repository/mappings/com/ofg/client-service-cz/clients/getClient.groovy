@@ -22,7 +22,7 @@ io.coderate.accurest.dsl.GroovyDsl.make {
   "loanId" : "testId",
   "_links" : {
     "self" : {
-      "href" : "'http://localhost:8095/clients/1'"
+      "href" : "http://localhost:8095/clients/1"
     }
   }
 }
